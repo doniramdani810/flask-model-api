@@ -2,8 +2,10 @@ services:
   - type: web
     name: flask-model-api
     env: python
-    buildCommand: ""
-    startCommand: "python app.py"
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
     envVars:
       - key: MODEL_A_WEIGHTS
         value: best_model.pth

@@ -5,5 +5,8 @@ best_model1.pth
 # ignore debug folder
 debug_images/
 
+# ignore BFG jar
+bfg.jar
+
 # node_modules atau folder lain yg besar
 node_modules/

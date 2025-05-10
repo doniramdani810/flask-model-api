@@ -5,3 +5,5 @@ torchvision
 Pillow
 numpy
 opencv-python-headless
+gdown
+gunicorn
