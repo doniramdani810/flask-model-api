@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: flask-model-api
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: MODEL_A_WEIGHTS
+        value: best_model.pth
+      - key: MODEL_A_MAPPING
+        value: class_mapping.pkl
+      - key: MODEL_B_WEIGHTS
+        value: best_model1.pth
+      - key: MODEL_B_MAPPING
+        value: class_mapping1.pkl
+      - key: CONF_THRESHOLD
+        value: "0.2"
+      - key: IOU_THRESHOLD
+        value: "0.1"
+      - key: SIM_CUTOFF
+        value: "0.6"
+      - key: OVERLAP_REMOVAL
+        value: "30"
