@@ -1,0 +1,9 @@
+# ignore model files—they’ll diunduh at runtime via start.sh
+best_model.pth
+best_model1.pth
+
+# ignore debug folder
+debug_images/
+
+# node_modules atau folder lain yg besar
+node_modules/
